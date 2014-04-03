@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>91DA9135-C9DF-4EAA-BBB0-1BA44C15A5C0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RSSParser</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8883D249-F24A-4909-9CA7-25660FF3284A</key>
+		<string>https://github.com/AnastasiaSazonova/RSSParser.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RSSParser.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8883D249-F24A-4909-9CA7-25660FF3284A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/AnastasiaSazonova/iOS-projects.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8883D249-F24A-4909-9CA7-25660FF3284A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8883D249-F24A-4909-9CA7-25660FF3284A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RSSParser</string>
+		</dict>
+	</array>
+</dict>
+</plist>
