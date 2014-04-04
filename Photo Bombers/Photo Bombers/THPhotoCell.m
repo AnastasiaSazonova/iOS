@@ -9,16 +9,18 @@
 #import "THPhotoCell.h"
 #import "THPhotoController.h"
 
+NSString * url = @"link";
+NSString * accessTokenStr = @"accessToken";
+
 @implementation THPhotoCell
 
 -(void)setPhoto:(NSDictionary *)photo
 {
     _photo = photo;
-    //NSURL * url = [[NSURL alloc] initWithString:_photo[@"images"][@"standard_resolution"][@"url"]];
-    [THPhotoController imageForPhoto:_photo size:@"thumbnail" completion:^(UIImage *image) {
+    [THPhotoController imageForPhoto:_photo size:@"thumbnail" completion:^(UIImage *image)
+     {
         self.imageView.image = image;
     }];
-    //[self downloadPhotoWithURL:url];
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -38,9 +40,9 @@
 
 -(void)like
 {
-    NSLog(@"Link: %@", self.photo[@"link"]);
+    NSLog(@"Link: %@", self.photo[url]);
     NSURLSession * session = [NSURLSession sharedSession];
-    NSString * accessToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"accessToken"];
+    NSString * accessToken = [[NSUserDefaults standardUserDefaults] objectForKey:accessTokenStr];
     NSString * urlString = [[NSString alloc] initWithFormat:@"https://api.instagram.com/v1/media/%@/likes?access_token=%@", self.photo[@"id"], accessToken];
     NSURL * url = [[NSURL alloc] initWithString:urlString];
     NSMutableURLRequest * request = [[NSMutableURLRequest alloc]initWithURL:url];

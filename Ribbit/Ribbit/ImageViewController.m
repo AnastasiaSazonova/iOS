@@ -8,6 +8,9 @@
 
 #import "ImageViewController.h"
 
+NSString * senderName = @"senderName";
+NSString * file = @"file";
+
 @interface ImageViewController ()
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -19,11 +22,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    PFFile * imageFile = [self.message objectForKey:@"file"];
+    PFFile * imageFile = [self.message objectForKey:file];
     NSURL * imageUrl = [[NSURL alloc]initWithString:imageFile.url];
     NSData * imageData = [NSData dataWithContentsOfURL:imageUrl];
     self.imageView.image = [UIImage imageWithData:imageData];
-    NSString * title = [self.message objectForKey:@"senderName"];
+    NSString * title = [self.message objectForKey:senderName];
     self.navigationItem.title = title;
 }
 
@@ -38,7 +41,7 @@
 
 -(void)timeOut
 {
-    [self.navigationController popToRootViewControllerAnimated:YES];//popViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 

@@ -11,6 +11,8 @@
 
 @interface ImageViewController : UIViewController
 
+extern NSString * file;
+
 @property(nonatomic, strong)PFObject * message;
 
 @end

@@ -189,7 +189,6 @@
 		5D59F06818D5791F0036DDDC /* Ribbit */ = {
 			isa = PBXGroup;
 			children = (
-				5D59F09118D579380036DDDC /* MainStoryboard.storyboard */,
 				5D30DDDF18DAE60100CE7790 /* ImageViewController.h */,
 				5D30DDE018DAE60100CE7790 /* ImageViewController.m */,
 				5D6F002918D83D5400C477A5 /* FriendsViewController.h */,
@@ -215,6 +214,7 @@
 		5D59F06918D5791F0036DDDC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5D59F09118D579380036DDDC /* MainStoryboard.storyboard */,
 				5D59F06A18D5791F0036DDDC /* Ribbit-Info.plist */,
 				5D59F06B18D5791F0036DDDC /* InfoPlist.strings */,
 				5D59F06E18D5791F0036DDDC /* main.m */,

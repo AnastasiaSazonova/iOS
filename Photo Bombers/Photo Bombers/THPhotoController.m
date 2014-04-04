@@ -9,6 +9,9 @@
 #import "THPhotoController.h"
 #import <SAMCache/SAMCache.h>
 
+NSString * images = @"images";
+NSString * urlStr = @"url";
+
 @implementation THPhotoController
 
 +(void)imageForPhoto:(NSDictionary *)photo size:(NSString *)size completion:(void (^)(UIImage *))completion
@@ -24,7 +27,7 @@
         completion(image);
         return;
     }
-    NSURL * url = [[NSURL alloc] initWithString:photo[@"images"][size][@"url"]];
+    NSURL * url = [[NSURL alloc] initWithString:photo[images][size][urlStr]];
     NSURLSession * session = [NSURLSession sharedSession];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     NSURLSessionDownloadTask * downloadTask = [session downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error)

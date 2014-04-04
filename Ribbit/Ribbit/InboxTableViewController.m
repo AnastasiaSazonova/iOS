@@ -13,8 +13,8 @@ NSString * recipientsIds = @"recipientsIds";
 NSString * messages = @"Messages";
 NSString * showImage = @"showImage";
 NSString * showLogin = @"showLogin";
-
-
+NSString * createdAt = @"createdAt";
+NSString * filetype = @"fileType";
 
 @implementation InboxTableViewController
 
@@ -30,7 +30,7 @@ NSString * showLogin = @"showLogin";
     }
     else
     {
-        [self performSegueWithIdentifier:@"showLogin" sender:self];
+        [self performSegueWithIdentifier:showLogin sender:self];
     }
 }
 
@@ -39,8 +39,8 @@ NSString * showLogin = @"showLogin";
     [super viewWillAppear:NO];
     [self.navigationController.navigationBar setHidden:NO];
     PFQuery * query = [PFQuery queryWithClassName:messages];
-    [query whereKey:@"recipientsIds" equalTo:[[PFUser currentUser] objectId]];
-    [query orderByAscending:@"createdAt"];
+    [query whereKey:recipientsIds equalTo:[[PFUser currentUser] objectId]];
+    [query orderByAscending:createdAt];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
     {
         if (error)
@@ -99,14 +99,14 @@ NSString * showLogin = @"showLogin";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.selectedMessage = [self.messages objectAtIndex:indexPath.row];
-    NSString * fileType = [self.selectedMessage objectForKey:@"fileType"];
+    NSString * fileType = [self.selectedMessage objectForKey:filetype];
     if ([fileType isEqualToString:@"image"])
     {
         [self performSegueWithIdentifier:showImage sender:self];
     }
     else
     {
-        PFFile * videoFile = [self.selectedMessage objectForKey:@"file"];
+        PFFile * videoFile = [self.selectedMessage objectForKey:file];
         NSURL * fileUrl = [NSURL URLWithString:videoFile.url];
         self.moviePlayer.contentURL = fileUrl;
         [self.moviePlayer prepareToPlay];

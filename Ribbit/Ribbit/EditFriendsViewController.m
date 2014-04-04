@@ -8,9 +8,9 @@
 
 #import "EditFriendsViewController.h"
 
-@interface EditFriendsViewController ()
 
-@end
+const NSString * friendsRelation = @"friendsRelation";
+const NSString * username = @"username";
 
 @implementation EditFriendsViewController
 

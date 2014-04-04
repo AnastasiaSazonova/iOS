@@ -10,6 +10,8 @@
 #import "THPhotoController.h"
 #import "THMetaView.h"
 
+NSString * standard_resolution = @"standard_resolution";
+
 @interface THDetailViewController ()
 
 @property(nonatomic, strong)UIImageView * imageView;
@@ -34,7 +36,7 @@
     self.metaView.photo = self.photo;
     [self.view addSubview:self.metaView];
     
-    [THPhotoController imageForPhoto:self.photo size:@"standard_resolution" completion:^(UIImage *image) {
+    [THPhotoController imageForPhoto:self.photo size:standard_resolution completion:^(UIImage *image) {
         self.imageView.image = image;
     }];
     

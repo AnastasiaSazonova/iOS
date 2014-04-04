@@ -9,9 +9,7 @@
 #import "FriendsViewController.h"
 #import "EditFriendsViewController.h"
 
-@interface FriendsViewController ()
-
-@end
+NSString * showEditFriends = @"showEditFriends";
 
 @implementation FriendsViewController
 
@@ -28,9 +26,9 @@
 
 -(void)updateData
 {
-    self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
+    self.friendsRelation = [[PFUser currentUser] objectForKey:friendsRelation];
     PFQuery * query = [self.friendsRelation query];
-    [query orderByAscending:@"username"];
+    [query orderByAscending:username];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
      {
          if (error)
@@ -48,7 +46,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"showEditFriends"])
+    if ([segue.identifier isEqualToString:showEditFriends])
     {
         EditFriendsViewController * viewController = (EditFriendsViewController *)segue.destinationViewController;
         viewController.friends = [NSMutableArray arrayWithArray:self.friends];
@@ -59,13 +57,11 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
     return [self.friends count];
 }
 

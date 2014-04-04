@@ -16,6 +16,8 @@
 NSString * accessTokenString = @"accessToken";
 NSString * credentials = @"credentials";
 NSString * token = @"token";
+NSString * photo = @"photo";
+NSString * data = @"data";
 
 @interface THPhotosViewController ()<UIViewControllerTransitioningDelegate>
 
@@ -37,7 +39,7 @@ NSString * token = @"token";
 
 -(void)viewDidLoad
 {
-    [self.collectionView registerClass:[THPhotoCell class] forCellWithReuseIdentifier:@"photo"];
+    [self.collectionView registerClass:[THPhotoCell class] forCellWithReuseIdentifier:photo];
     self.title = @"Photo Bombers";
     self.collectionView.backgroundColor = [UIColor whiteColor];
     NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
@@ -69,7 +71,7 @@ NSString * token = @"token";
                                        {
                                            NSData * jsonData = [[NSData alloc] initWithContentsOfURL:location];
                                            NSDictionary * dictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
-                                           self.photos = [dictionary valueForKey:@"data"];
+                                           self.photos = [dictionary valueForKey:data];
                                            dispatch_async(dispatch_get_main_queue(), ^{
                                                [self.collectionView reloadData];
                                            });
@@ -85,7 +87,7 @@ NSString * token = @"token";
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    THPhotoCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"photo" forIndexPath:indexPath];
+    THPhotoCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:photo forIndexPath:indexPath];
     cell.backgroundColor = [UIColor lightGrayColor];
     cell.photo = self.photos[indexPath.row];
     return cell;
