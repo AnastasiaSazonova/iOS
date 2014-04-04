@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D089C6518E4889B0062C754 /* THDismissDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D089C6418E4889B0062C754 /* THDismissDetailTransition.m */; };
+		5D2FCF7518E420A40011EE38 /* THPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2FCF7418E420A40011EE38 /* THPhotoController.m */; };
+		5D2FCF7A18E426160011EE38 /* THPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2FCF7718E426160011EE38 /* THPhotoCell.m */; };
+		5D2FCF7B18E426160011EE38 /* THPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2FCF7918E426160011EE38 /* THPhotosViewController.m */; };
+		5D2FCF7E18E4275C0011EE38 /* THDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2FCF7D18E4275C0011EE38 /* THDetailViewController.m */; };
+		5D2FCF8118E434740011EE38 /* THPresentDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2FCF8018E434740011EE38 /* THPresentDetailTransition.m */; };
+		5D7DE7F118E7384300D49FFC /* THMetaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7DE7F018E7384300D49FFC /* THMetaView.m */; };
+		5D8ACFE818E0E11000EA4892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8ACFE718E0E11000EA4892 /* Foundation.framework */; };
+		5D8ACFEA18E0E11000EA4892 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8ACFE918E0E11000EA4892 /* CoreGraphics.framework */; };
+		5D8ACFEC18E0E11000EA4892 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8ACFEB18E0E11000EA4892 /* UIKit.framework */; };
+		5D8ACFF218E0E11000EA4892 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D8ACFF018E0E11000EA4892 /* InfoPlist.strings */; };
+		5D8ACFF418E0E11000EA4892 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8ACFF318E0E11000EA4892 /* main.m */; };
+		5D8ACFF818E0E11000EA4892 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8ACFF718E0E11000EA4892 /* AppDelegate.m */; };
+		5D8ACFFA18E0E11000EA4892 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D8ACFF918E0E11000EA4892 /* Images.xcassets */; };
+		5D8AD00118E0E11100EA4892 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8AD00018E0E11100EA4892 /* XCTest.framework */; };
+		5D8AD00218E0E11100EA4892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8ACFE718E0E11000EA4892 /* Foundation.framework */; };
+		5D8AD00318E0E11100EA4892 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8ACFEB18E0E11000EA4892 /* UIKit.framework */; };
+		5D8AD00B18E0E11100EA4892 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AD00918E0E11100EA4892 /* InfoPlist.strings */; };
+		5D8AD00D18E0E11100EA4892 /* Photo_BombersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AD00C18E0E11100EA4892 /* Photo_BombersTests.m */; };
+		B20D1C7465A94728B5F2488A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B5122261134FB48E24DF48 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D8AD00418E0E11100EA4892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D8ACFDC18E0E11000EA4892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D8ACFE318E0E11000EA4892;
+			remoteInfo = "Photo Bombers";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22B5122261134FB48E24DF48 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D089C6318E4889B0062C754 /* THDismissDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDismissDetailTransition.h; sourceTree = "<group>"; };
+		5D089C6418E4889B0062C754 /* THDismissDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDismissDetailTransition.m; sourceTree = "<group>"; };
+		5D2F8ACD18E1FD17007F40A9 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5D2FCF7318E420A40011EE38 /* THPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPhotoController.h; sourceTree = "<group>"; };
+		5D2FCF7418E420A40011EE38 /* THPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPhotoController.m; sourceTree = "<group>"; };
+		5D2FCF7618E426160011EE38 /* THPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPhotoCell.h; sourceTree = "<group>"; };
+		5D2FCF7718E426160011EE38 /* THPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPhotoCell.m; sourceTree = "<group>"; };
+		5D2FCF7818E426160011EE38 /* THPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPhotosViewController.h; sourceTree = "<group>"; };
+		5D2FCF7918E426160011EE38 /* THPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPhotosViewController.m; sourceTree = "<group>"; };
+		5D2FCF7C18E4275C0011EE38 /* THDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDetailViewController.h; sourceTree = "<group>"; };
+		5D2FCF7D18E4275C0011EE38 /* THDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDetailViewController.m; sourceTree = "<group>"; };
+		5D2FCF7F18E434740011EE38 /* THPresentDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPresentDetailTransition.h; sourceTree = "<group>"; };
+		5D2FCF8018E434740011EE38 /* THPresentDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPresentDetailTransition.m; sourceTree = "<group>"; };
+		5D7DE7EF18E7384300D49FFC /* THMetaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMetaView.h; sourceTree = "<group>"; };
+		5D7DE7F018E7384300D49FFC /* THMetaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMetaView.m; sourceTree = "<group>"; };
+		5D8ACFE418E0E11000EA4892 /* Photo Bombers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Bombers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8ACFE718E0E11000EA4892 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D8ACFE918E0E11000EA4892 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5D8ACFEB18E0E11000EA4892 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5D8ACFEF18E0E11000EA4892 /* Photo Bombers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Photo Bombers-Info.plist"; sourceTree = "<group>"; };
+		5D8ACFF118E0E11000EA4892 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D8ACFF318E0E11000EA4892 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D8ACFF518E0E11000EA4892 /* Photo Bombers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Photo Bombers-Prefix.pch"; sourceTree = "<group>"; };
+		5D8ACFF618E0E11000EA4892 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5D8ACFF718E0E11000EA4892 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5D8ACFF918E0E11000EA4892 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5D8ACFFF18E0E11100EA4892 /* Photo BombersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo BombersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8AD00018E0E11100EA4892 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5D8AD00818E0E11100EA4892 /* Photo BombersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Photo BombersTests-Info.plist"; sourceTree = "<group>"; };
+		5D8AD00A18E0E11100EA4892 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D8AD00C18E0E11100EA4892 /* Photo_BombersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photo_BombersTests.m; sourceTree = "<group>"; };
+		88FB203F89B14548B215F2C5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D8ACFE118E0E11000EA4892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8ACFEA18E0E11000EA4892 /* CoreGraphics.framework in Frameworks */,
+				5D8ACFEC18E0E11000EA4892 /* UIKit.framework in Frameworks */,
+				5D8ACFE818E0E11000EA4892 /* Foundation.framework in Frameworks */,
+				B20D1C7465A94728B5F2488A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D8ACFFC18E0E11100EA4892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8AD00118E0E11100EA4892 /* XCTest.framework in Frameworks */,
+				5D8AD00318E0E11100EA4892 /* UIKit.framework in Frameworks */,
+				5D8AD00218E0E11100EA4892 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D089C6618E488A20062C754 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				5D2FCF7F18E434740011EE38 /* THPresentDetailTransition.h */,
+				5D2FCF8018E434740011EE38 /* THPresentDetailTransition.m */,
+				5D089C6318E4889B0062C754 /* THDismissDetailTransition.h */,
+				5D089C6418E4889B0062C754 /* THDismissDetailTransition.m */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
+		5D089C6718E488DD0062C754 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				5D2FCF7C18E4275C0011EE38 /* THDetailViewController.h */,
+				5D2FCF7D18E4275C0011EE38 /* THDetailViewController.m */,
+				5D7DE7EF18E7384300D49FFC /* THMetaView.h */,
+				5D7DE7F018E7384300D49FFC /* THMetaView.m */,
+			);
+			name = DetailView;
+			sourceTree = "<group>";
+		};
+		5D089C6818E488F70062C754 /* PhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				5D2FCF7618E426160011EE38 /* THPhotoCell.h */,
+				5D2FCF7718E426160011EE38 /* THPhotoCell.m */,
+				5D2FCF7818E426160011EE38 /* THPhotosViewController.h */,
+				5D2FCF7918E426160011EE38 /* THPhotosViewController.m */,
+			);
+			name = PhotoView;
+			sourceTree = "<group>";
+		};
+		5D089C6918E489370062C754 /* PhotoController */ = {
+			isa = PBXGroup;
+			children = (
+				5D2FCF7318E420A40011EE38 /* THPhotoController.h */,
+				5D2FCF7418E420A40011EE38 /* THPhotoController.m */,
+			);
+			name = PhotoController;
+			sourceTree = "<group>";
+		};
+		5D8ACFDB18E0E11000EA4892 = {
+			isa = PBXGroup;
+			children = (
+				5D2F8ACD18E1FD17007F40A9 /* Podfile */,
+				5D8ACFED18E0E11000EA4892 /* Photo Bombers */,
+				5D8AD00618E0E11100EA4892 /* Photo BombersTests */,
+				5D8ACFE618E0E11000EA4892 /* Frameworks */,
+				5D8ACFE518E0E11000EA4892 /* Products */,
+				88FB203F89B14548B215F2C5 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		5D8ACFE518E0E11000EA4892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D8ACFE418E0E11000EA4892 /* Photo Bombers.app */,
+				5D8ACFFF18E0E11100EA4892 /* Photo BombersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D8ACFE618E0E11000EA4892 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D8ACFE718E0E11000EA4892 /* Foundation.framework */,
+				5D8ACFE918E0E11000EA4892 /* CoreGraphics.framework */,
+				5D8ACFEB18E0E11000EA4892 /* UIKit.framework */,
+				5D8AD00018E0E11100EA4892 /* XCTest.framework */,
+				22B5122261134FB48E24DF48 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D8ACFED18E0E11000EA4892 /* Photo Bombers */ = {
+			isa = PBXGroup;
+			children = (
+				5D089C6918E489370062C754 /* PhotoController */,
+				5D089C6818E488F70062C754 /* PhotoView */,
+				5D089C6718E488DD0062C754 /* DetailView */,
+				5D089C6618E488A20062C754 /* Transitions */,
+				5D8ACFEE18E0E11000EA4892 /* Supporting Files */,
+			);
+			path = "Photo Bombers";
+			sourceTree = "<group>";
+		};
+		5D8ACFEE18E0E11000EA4892 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D8ACFF918E0E11000EA4892 /* Images.xcassets */,
+				5D8ACFF618E0E11000EA4892 /* AppDelegate.h */,
+				5D8ACFF718E0E11000EA4892 /* AppDelegate.m */,
+				5D8ACFEF18E0E11000EA4892 /* Photo Bombers-Info.plist */,
+				5D8ACFF018E0E11000EA4892 /* InfoPlist.strings */,
+				5D8ACFF318E0E11000EA4892 /* main.m */,
+				5D8ACFF518E0E11000EA4892 /* Photo Bombers-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D8AD00618E0E11100EA4892 /* Photo BombersTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D8AD00C18E0E11100EA4892 /* Photo_BombersTests.m */,
+				5D8AD00718E0E11100EA4892 /* Supporting Files */,
+			);
+			path = "Photo BombersTests";
+			sourceTree = "<group>";
+		};
+		5D8AD00718E0E11100EA4892 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D8AD00818E0E11100EA4892 /* Photo BombersTests-Info.plist */,
+				5D8AD00918E0E11100EA4892 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D8ACFE318E0E11000EA4892 /* Photo Bombers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D8AD01018E0E11100EA4892 /* Build configuration list for PBXNativeTarget "Photo Bombers" */;
+			buildPhases = (
+				A19DF1A70B4D4E508BA5AA87 /* Check Pods Manifest.lock */,
+				5D8ACFE018E0E11000EA4892 /* Sources */,
+				5D8ACFE118E0E11000EA4892 /* Frameworks */,
+				5D8ACFE218E0E11000EA4892 /* Resources */,
+				55543EF2FA2946D9B1A1C90D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Photo Bombers";
+			productName = "Photo Bombers";
+			productReference = 5D8ACFE418E0E11000EA4892 /* Photo Bombers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D8ACFFE18E0E11100EA4892 /* Photo BombersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D8AD01318E0E11100EA4892 /* Build configuration list for PBXNativeTarget "Photo BombersTests" */;
+			buildPhases = (
+				5D8ACFFB18E0E11100EA4892 /* Sources */,
+				5D8ACFFC18E0E11100EA4892 /* Frameworks */,
+				5D8ACFFD18E0E11100EA4892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D8AD00518E0E11100EA4892 /* PBXTargetDependency */,
+			);
+			name = "Photo BombersTests";
+			productName = "Photo BombersTests";
+			productReference = 5D8ACFFF18E0E11100EA4892 /* Photo BombersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D8ACFDC18E0E11000EA4892 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = AD;
+				TargetAttributes = {
+					5D8ACFFE18E0E11100EA4892 = {
+						TestTargetID = 5D8ACFE318E0E11000EA4892;
+					};
+				};
+			};
+			buildConfigurationList = 5D8ACFDF18E0E11000EA4892 /* Build configuration list for PBXProject "Photo Bombers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5D8ACFDB18E0E11000EA4892;
+			productRefGroup = 5D8ACFE518E0E11000EA4892 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D8ACFE318E0E11000EA4892 /* Photo Bombers */,
+				5D8ACFFE18E0E11100EA4892 /* Photo BombersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D8ACFE218E0E11000EA4892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8ACFF218E0E11000EA4892 /* InfoPlist.strings in Resources */,
+				5D8ACFFA18E0E11000EA4892 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D8ACFFD18E0E11100EA4892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8AD00B18E0E11100EA4892 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55543EF2FA2946D9B1A1C90D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A19DF1A70B4D4E508BA5AA87 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D8ACFE018E0E11000EA4892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8ACFF818E0E11000EA4892 /* AppDelegate.m in Sources */,
+				5D2FCF7518E420A40011EE38 /* THPhotoController.m in Sources */,
+				5D2FCF7A18E426160011EE38 /* THPhotoCell.m in Sources */,
+				5D2FCF8118E434740011EE38 /* THPresentDetailTransition.m in Sources */,
+				5D089C6518E4889B0062C754 /* THDismissDetailTransition.m in Sources */,
+				5D2FCF7B18E426160011EE38 /* THPhotosViewController.m in Sources */,
+				5D8ACFF418E0E11000EA4892 /* main.m in Sources */,
+				5D7DE7F118E7384300D49FFC /* THMetaView.m in Sources */,
+				5D2FCF7E18E4275C0011EE38 /* THDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D8ACFFB18E0E11100EA4892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8AD00D18E0E11100EA4892 /* Photo_BombersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D8AD00518E0E11100EA4892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D8ACFE318E0E11000EA4892 /* Photo Bombers */;
+			targetProxy = 5D8AD00418E0E11100EA4892 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D8ACFF018E0E11000EA4892 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D8ACFF118E0E11000EA4892 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5D8AD00918E0E11100EA4892 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D8AD00A18E0E11100EA4892 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D8AD00E18E0E11100EA4892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5D8AD00F18E0E11100EA4892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D8AD01118E0E11100EA4892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FB203F89B14548B215F2C5 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Photo Bombers/Photo Bombers-Prefix.pch";
+				INFOPLIST_FILE = "Photo Bombers/Photo Bombers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5D8AD01218E0E11100EA4892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88FB203F89B14548B215F2C5 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Photo Bombers/Photo Bombers-Prefix.pch";
+				INFOPLIST_FILE = "Photo Bombers/Photo Bombers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5D8AD01418E0E11100EA4892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Photo Bombers.app/Photo Bombers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Photo Bombers/Photo Bombers-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Photo BombersTests/Photo BombersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5D8AD01518E0E11100EA4892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Photo Bombers.app/Photo Bombers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Photo Bombers/Photo Bombers-Prefix.pch";
+				INFOPLIST_FILE = "Photo BombersTests/Photo BombersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D8ACFDF18E0E11000EA4892 /* Build configuration list for PBXProject "Photo Bombers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D8AD00E18E0E11100EA4892 /* Debug */,
+				5D8AD00F18E0E11100EA4892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D8AD01018E0E11100EA4892 /* Build configuration list for PBXNativeTarget "Photo Bombers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D8AD01118E0E11100EA4892 /* Debug */,
+				5D8AD01218E0E11100EA4892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D8AD01318E0E11100EA4892 /* Build configuration list for PBXNativeTarget "Photo BombersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D8AD01418E0E11100EA4892 /* Debug */,
+				5D8AD01518E0E11100EA4892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D8ACFDC18E0E11000EA4892 /* Project object */;
+}
