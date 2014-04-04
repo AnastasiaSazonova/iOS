@@ -9,9 +9,12 @@
 #import "InboxTableViewController.h"
 #import "ImageViewController.h"
 
-@interface InboxTableViewController ()
+NSString * recipientsIds = @"recipientsIds";
+NSString * messages = @"Messages";
+NSString * showImage = @"showImage";
+NSString * showLogin = @"showLogin";
 
-@end
+
 
 @implementation InboxTableViewController
 
@@ -19,9 +22,7 @@
 {
     [super viewDidLoad];
     self.moviePlayer = [[MPMoviePlayerController alloc] init];
-//    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-//    testObject[@"foo"] = @"bar";
-//    [testObject saveInBackground];
+
     PFUser * currentUser = [PFUser currentUser];
     if (currentUser)
     {
@@ -37,7 +38,7 @@
 {
     [super viewWillAppear:NO];
     [self.navigationController.navigationBar setHidden:NO];
-    PFQuery * query = [PFQuery queryWithClassName:@"Messages"];
+    PFQuery * query = [PFQuery queryWithClassName:messages];
     [query whereKey:@"recipientsIds" equalTo:[[PFUser currentUser] objectId]];
     [query orderByAscending:@"createdAt"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
@@ -49,9 +50,7 @@
         else
         {
             self.messages = objects;
-            NSLog(@"number of messages %d", [self.messages count]);
             [self.tableView reloadData];
-            NSLog(@"reload data!!!!!!!!!!!!!!");
         }
     }];
 }
@@ -59,7 +58,7 @@
 - (IBAction)logOut:(UIBarButtonItem *)sender
 {
     [PFUser logOut];
-    [self performSegueWithIdentifier:@"showLogin" sender:self];
+    [self performSegueWithIdentifier:showLogin sender:self];
 }
 
 #pragma mark - Table view data source
@@ -103,7 +102,7 @@
     NSString * fileType = [self.selectedMessage objectForKey:@"fileType"];
     if ([fileType isEqualToString:@"image"])
     {
-        [self performSegueWithIdentifier:@"showImage" sender:self];
+        [self performSegueWithIdentifier:showImage sender:self];
     }
     else
     {
@@ -114,8 +113,7 @@
         [self.view addSubview:self.moviePlayer.view];
         [self.moviePlayer setFullscreen:YES animated:YES];
     }
-    NSMutableArray * array = [NSMutableArray arrayWithArray:[self.selectedMessage objectForKey:@"recipientsIds"]];
-    NSLog(@"recipients to delete: %@", array);
+    NSMutableArray * array = [NSMutableArray arrayWithArray:[self.selectedMessage objectForKey:recipientsIds]];
     if ([array count] == 1)
     {
         [self.selectedMessage deleteInBackground];
@@ -123,18 +121,18 @@
     else
     {
         [array removeObject:[[PFUser currentUser]objectId]];
-        [self.selectedMessage setObject:array forKey:@"recipientsIds"];
+        [self.selectedMessage setObject:array forKey:recipientsIds];
         [self.selectedMessage saveInBackground];
     }
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"showLogin"])
+    if ([segue.identifier isEqualToString:showLogin])
     {
         [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
     }
-    else if ([segue.identifier isEqualToString:@"showImage"])
+    else if ([segue.identifier isEqualToString:showImage])
     {
         [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
         ImageViewController * imageViewController = (ImageViewController *)segue.destinationViewController;

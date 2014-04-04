@@ -20,7 +20,6 @@
 {
     [super viewDidLoad];
     self.historyTextView.userInteractionEnabled = YES;
-    //self.tabBarItem.
     for (NSString * description in self.arrayOfDescriptions)
     {
         self.historyTextView.text = [self.historyTextView.text stringByAppendingString:description];

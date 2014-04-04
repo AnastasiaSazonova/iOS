@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hcv-hd-fxh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rUi-pB-JeU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -465,54 +465,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-339" y="-494"/>
-        </scene>
-        <!--Navigation Controller - 3 cards-->
-        <scene sceneID="LDR-59-DEV">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LGM-CO-xVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="tf6-Ba-iJN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="3 cards" id="dKR-BJ-tD3"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zy9-Z7-3jA">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="UAI-HP-UEN" kind="relationship" relationship="rootViewController" id="FfP-Ab-XJ3"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-833" y="227"/>
-        </scene>
-        <!--Three Cards View Controller - Matchismo-->
-        <scene sceneID="bnj-3F-Hhd">
-            <objects>
-                <viewController id="UAI-HP-UEN" customClass="ThreeCardsViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tvw-Ve-mbk"/>
-                        <viewControllerLayoutGuide type="bottom" id="ssq-z7-YVY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8E1-XT-JVC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Matchismo" id="iXo-S4-Mxd">
-                        <barButtonItem key="rightBarButtonItem" title="History" id="4Ss-jr-d5i">
-                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="fOt-us-fVG" kind="push" id="N2b-cd-xXd"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hKd-Q9-OWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-339" y="227"/>
+            <point key="canvasLocation" x="187" y="-494"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="8Uc-mS-0U2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vff-Zb-Mrg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="fOt-us-fVG" customClass="HistoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tdD-Ob-7sx"/>
@@ -537,43 +494,27 @@
                         <outlet property="historyTextView" destination="fd4-Yz-Umn" id="WOm-E6-CEf"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vff-Zb-Mrg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249" y="-10"/>
+            <point key="canvasLocation" x="707" y="-494"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="alA-Yn-bWN">
+        <!--Navigation Controller-->
+        <scene sceneID="4Cj-Zv-gQc">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="hcv-hd-fxh" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="eAF-XB-fiP">
-                        <rect key="frame" x="129" y="330" width="163" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="GvX-mf-EuY" kind="relationship" relationship="viewControllers" id="Tdh-b2-jAz"/>
-                        <segue destination="tf6-Ba-iJN" kind="relationship" relationship="viewControllers" id="YtU-xB-hcM"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xpR-EI-i8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1366" y="-185"/>
-        </scene>
-        <!--Navigation Controller - 2 cards-->
-        <scene sceneID="bBa-SP-Kox">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="GvX-mf-EuY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="2 cards" id="4RN-DT-rXa"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yUb-kE-RVQ">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rUi-pB-JeU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Isw-zB-f41">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="NHk-s9-uSD"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="oC1-ut-HF9"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tIS-xV-BQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8L-bN-ZRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-830" y="-494"/>
+            <point key="canvasLocation" x="-339" y="-494"/>
         </scene>
     </scenes>
     <resources>
@@ -584,7 +525,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="u85-RC-NSZ"/>
-    </inferredMetricsTieBreakers>
 </document>
