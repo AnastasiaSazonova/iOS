@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>603A8E91-3AE1-495D-A3EE-63DD3D98590F</string>
+	<string>74EFDC41-195A-4BA5-AE1A-9FF647DB5843</string>
 	<key>IDESourceControlProjectName</key>
-	<string>RSSParser</string>
+	<string>Diary</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>8883D249-F24A-4909-9CA7-25660FF3284A</key>
-		<string>https://github.com/AnastasiaSazonova/RSSParser.git</string>
+		<key>62CD54DC-A435-4773-8BD8-10FFA8912B27</key>
+		<string>https://github.com/AnastasiaSazonova/iOS-projects.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>RSSParser.xcodeproj/project.xcworkspace</string>
+	<string>Diary/Diary.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>8883D249-F24A-4909-9CA7-25660FF3284A</key>
-		<string>../..</string>
+		<key>62CD54DC-A435-4773-8BD8-10FFA8912B27</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/AnastasiaSazonova/iOS.git</string>
+	<string>https://github.com/AnastasiaSazonova/iOS-projects.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8883D249-F24A-4909-9CA7-25660FF3284A</string>
+	<string>62CD54DC-A435-4773-8BD8-10FFA8912B27</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>8883D249-F24A-4909-9CA7-25660FF3284A</string>
+			<string>62CD54DC-A435-4773-8BD8-10FFA8912B27</string>
 			<key>IDESourceControlWCCName</key>
-			<string>RSSParser</string>
+			<string>iOS projects</string>
 		</dict>
 	</array>
 </dict>
